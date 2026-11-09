@@ -7,7 +7,7 @@ st.markdown('# Keep track of Krillion Daily Deep Dive Scores 🦐')
 st.session_state.date = dt.date.today()
 
 
-data = pd.DataFrame(data={'Al-Ameen':[330], 'Jamie':[335], 'Milli':[410], 'Noah':[335]}, index=[st.session_state.date])
+data = pd.DataFrame(data={'Al-Ameen':[330], 'Jamie':[335], 'Millie':[410], 'Noah':[335]}, index=[st.session_state.date])
 
 st.subheader("Current Scores")
 if 'my_df' not in st.session_state:
