@@ -7,7 +7,7 @@ st.markdown('# Keep track of Krillion Daily Deep Dive Scores 🦐')
 st.session_state.date = dt.date.today()
 
 
-data = pd.DataFrame(data={'Al-Ameen':[330], 'Jaime':[335], 'Milly':[410], 'Noah':[335]}, index=[st.session_state.date])
+data = pd.DataFrame(data={'Al-Ameen':[330], 'Jamie':[335], 'Mille':[410], 'Noah':[335]}, index=[st.session_state.date])
 
 st.subheader("Current Scores")
 if 'my_df' not in st.session_state:
@@ -19,7 +19,7 @@ last_idx = st.session_state['my_df'].index[-1]
 st.subheader("Add new scores")
 form = st.form(key='match')
 with form:
-    user = st.selectbox("Choose Player", ('Al-Ameen', 'Jaime', 'Milly', 'Noah'))
+    user = st.selectbox("Choose Player", ('Al-Ameen', 'Jamie', 'Mille', 'Noah'))
     score = st.text_input("Today's Score")
     submit = st.form_submit_button('Submit')
     if submit:
